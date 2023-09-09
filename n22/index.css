@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box {
+    height: 200px;
+    min-width: 300px;
+    background-color: bisque;
+}
+
+@media (max-width: 1220px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 850px;
+    }
+    .box {
+        width: 500px;
+    }
+}
